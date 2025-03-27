@@ -14,8 +14,8 @@ public class SellerController {
     public String hello() {
 
         /// Instanciar 5 seller
-        Location manizales = new Location(17001, "Manizales");
-        Location pereira = new Location( 66001, "Pereira");
+        Location manizales = new Location("17001", "Manizales");
+        Location pereira = new Location( "66001", "Pereira");
         Location city3 = new Location(3, "Barranquilla");
         Location city4 = new Location(4, "Medellin");
         Location city5 = new Location(5, "Pasto");
