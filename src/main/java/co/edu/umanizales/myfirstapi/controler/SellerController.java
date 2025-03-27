@@ -7,11 +7,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import co.edu.umanizales.myfirstapi.model.Location;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @RestController
 @RequestMapping(path = "/seller")
 public class SellerController {
     @GetMapping
-    public String hello() {
+    public List<Seller> hello() {
 
         /// Instanciar 5 seller
         Location manizales = new Location("17001", "Manizales");
@@ -27,6 +30,15 @@ public class SellerController {
         Seller seller3 = new Seller("103", "Oscar", "Acosta", 'M', (byte) 43, barranquilla);
         Seller seller4 = new Seller("104", "Maria", "Valencia", 'F', (byte) 54, medellin);
         Seller seller5 = new Seller("105", "Mariana", "Cifuentes", 'F', (byte) 27, pasto);
-        return "vendedores creados correctamente";
+
+        List<Seller> sellers = new ArrayList<>();
+        sellers.add(seller1);
+        sellers.add(seller2);
+        sellers.add(seller3);
+        sellers.add(seller4);
+        sellers.add(seller5);
+
+        return sellers;
+
     }
 }
