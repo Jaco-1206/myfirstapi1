@@ -14,16 +14,16 @@ public class SellerController {
     public String hello() {
 
         /// Instanciar 5 seller
-        Location city1 = new Location(1, "Bogotá");
-        Location city2 = new Location(2, "Manizales");
+        Location manizales = new Location(17001, "Manizales");
+        Location pereira = new Location( 66001, "Pereira");
         Location city3 = new Location(3, "Barranquilla");
         Location city4 = new Location(4, "Medellin");
         Location city5 = new Location(5, "Pasto");
 
 
 
-        Seller seller1 = new Seller("101", "Juan", "Pérez", 'M', (byte) 30, city1);
-        Seller seller2 = new Seller("102", "Peter", "Pan", 'M', (byte) 40, city2);
+        Seller seller1 = new Seller("101", "Juan", "Pérez", 'M', (byte) 30 , manizales);
+        Seller seller2 = new Seller("102", "Peter", "Pan", 'M', (byte) 40, pereira);
         Seller seller3 = new Seller("103", "Oscar", "Acosta", 'M', (byte) 43, city3);
         Seller seller4 = new Seller("104", "Maria", "Valencia", 'F', (byte) 54, city4);
         Seller seller5 = new Seller("105", "Mariana", "Cifuentes", 'F', (byte) 27, city5);
